@@ -1,0 +1,76 @@
+{
+    "ec2-1": {
+        "ami": "ami-12345677880", 
+        "instance-count": {
+            "base": 0, 
+            "time": [
+                {
+                    "amount": 0, 
+                    "from": "6:04", 
+                    "to": "20:56"
+                }
+            ]
+        }, 
+        "instance-type": "c4.xlarge", 
+        "name": "browsers chrome firefox", 
+        "security-groups": [
+            "sg-xxxxxxxxxxxxxxxx"
+        ], 
+        "subnets": [
+            "subnet-xxxxxxxx", 
+            "subnet-xxxxxxxx", 
+            "subnet-xxxxxxxx"
+        ], 
+        "type": "linux-browser"
+    },
+    "ec2-2": {
+        "ami": "ami-1234567", 
+        "instance-count": {
+            "base": 0, 
+            "time": [
+                {
+                    "amount": 0, 
+                    "from": "6:00", 
+                    "to": "18:00"
+                }
+            ]
+        }, 
+        "instance-type": "m1.small", 
+        "name": "browser IE", 
+        "security-groups": [
+            "sg-xxxxxxxx"
+        ], 
+        "subnets": [
+            "subnet-xxxxxxxx", 
+            "subnet-xxxxxxxx", 
+            "subnet-xxxxxxxx"
+        ]
+    },
+    "ecs": {
+        "ami": "ami-123344546567", 
+        "iam-instance-profile": {
+            "Arn": "XXXXXXXXXXXXX"
+        }, 
+        "instance-count": {
+            "base": 0, 
+            "time": [
+                {
+                    "amount": 4, 
+                    "from": "6:02", 
+                    "to": "20:58"
+                }
+            ]
+        }, 
+        "instance-type": "c5.large", 
+        "key-name": "xxxxxxxx",
+        "name": "ECS", 
+        "security-groups": [
+            "sg-xxxxxxx"
+        ], 
+        "subnets": [
+            "subnet-xxxxxxxx", 
+            "subnet-xxxxxxxx", 
+            "subnet-xxxxxxxx"
+        ] 
+    }
+}
